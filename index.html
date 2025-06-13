@@ -1,16 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Portifólio Ana Chustake & Camila</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portifolio Ana e Camila</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfólio de ANA E CAMILA </title>
+    <style>
+        body {
+            background-color: #f8bbd0; /* Rosa bebê */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Texto escuro para contraste */
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8); /* Fundo semitransparente */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .sobre-mim, .projetos, .contato {
+            margin-bottom: 40px;
+        }
+        .projetos .card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  
-    
 
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Portfólio de ANA E CAMILA</h1>
+        <p>Desenvolvedor Web | Designer | Criador de Conteúdo</p>
+    </header>
 
+    <!-- Navegação -->
+    <nav>
+        <a href="#sobre-mim">Sobre Nós</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-    
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim" class="sobre-mim">
+        <h2>Sobre Nós</h2>
+        <p>Olá, sou ANA E CAMILA, uma desenvolvedora web apaixonada por criar experiências incríveis na internet. Tenho experiência em várias tecnologias, como HTML, CSS, JavaScript, React e muito mais.</p>
+        <p>Meu objetivo é ajudar empresas e pessoas a transformarem suas ideias em websites bonitos, rápidos e funcionais.</p>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="card">
+            <img src="imagem-do-projeto1.jpg" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do Projeto 1. Um site incrível feito com HTML, CSS e JavaScript.</p>
+            <a href="link-do-projeto1" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+            <img src="imagem-do-projeto2.jpg" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição do Projeto 2. Um aplicativo desenvolvido com React.</p>
+            <a href="link-do-projeto2" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+            <img src="imagem-do-projeto3.jpg" alt="Projeto 3">
+            <h3>Projeto 3</h3>
+            <p>Descrição do Projeto 3. Um design de interface desenvolvido com Figma e implementado com HTML/CSS.</p>
+            <a href="link-do-projeto3" target="_blank">Ver Projeto</a>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Se você gostou do meu trabalho ou tem alguma dúvida, entre em contato com a gente!</p>
+        <form action="seu-script-de-contato.php" method="POST">
+            <label for="nome">ana e camila:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">ana.chustake@escola.pr.gov.br & vieira.santos.karla@escola.pr.gov.br</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 [ANA E CAMILA]. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
